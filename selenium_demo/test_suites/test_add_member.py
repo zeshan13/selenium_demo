@@ -15,12 +15,18 @@ class TestAddMember():
         self.driver.get(url="https://work.weixin.qq.com/wework_admin/loginpage_wx?from=myhome")
         self.main_page = MainPage(self.driver)
 
-    def test_add_member_in_contact_page(self,username, accid, phone):
-        contact_list = self.main_page.goto_contact_page().add_member(username, accid, phone).goto_contact_list()
+    def test_add_member_in_contact_page(self):
+        username = "小黄"
+        accid = "111"
+        email = "123456789@qq.com"
+        contact_list = self.main_page.goto_contact_page().goto_add_member().add_member(username, accid, email).goto_contact_list()
 
-    def test_add_member_in_main_page(self,username, accid, phone):
-        contact_list = self.main_page.add_member(username, accid, phone).goto_contact_list()
+    def test_add_member_in_main_page(self,):
+        username = "小黄"
+        accid = "111"
+        email = "123456789@qq.com"
+        contact_list = self.main_page.goto_add_member().add_member(username, accid, email).goto_contact_list()
 
-    
+
 
 

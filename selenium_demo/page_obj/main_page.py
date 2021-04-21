@@ -6,15 +6,18 @@
 from selenium_demo.comm.base_page import BasePage
 from add_member_page import AddMemberPage
 from contact_page import ContactPage
+from selenium.webdriver.common.by import By
 
 class MainPage(BasePage):
-    def add_member(self,username, accid, phone):
-
+    _add_member_btn = (By.CSS_SELECTOR, "[node-type='addmember']")
+    _menu_contacts_locator = (By.CSS_SELECTOR, "[id='menu_contacts']")
+    def goto_add_member(self,):
+        # 点击添加员工
+        self.find_element(self._add_member_btn).click()
         return AddMemberPage(self.driver)
 
-
     def goto_contact_page(self):
-
+        self.find_element(self._menu_contacts_locator).click()
         return ContactPage(self.dirver)
 
 
