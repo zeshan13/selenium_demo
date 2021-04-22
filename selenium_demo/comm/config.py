@@ -31,8 +31,6 @@ COMMCFG.chromedriver_path = os.path.join(COMMCFG.tools_dir,"chromedriver.exe")
 
 
 
-
-
 if __name__ == '__main__':
     print(COMMCFG.base_dir)
     print(COMMCFG.cookies_path)

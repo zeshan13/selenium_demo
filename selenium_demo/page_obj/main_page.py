@@ -3,9 +3,11 @@
 # @Time    : 2021-04-20 23:40
 # @Author  : zeshan
 # @File    : main_page.py
+import time
+
 from selenium_demo.comm.base_page import BasePage
-from add_member_page import AddMemberPage
-from contact_page import ContactPage
+from selenium_demo.page_obj.add_member_page import AddMemberPage
+from selenium_demo.page_obj.contact_page import ContactPage
 from selenium.webdriver.common.by import By
 
 class MainPage(BasePage):
@@ -17,8 +19,9 @@ class MainPage(BasePage):
         return AddMemberPage(self.driver)
 
     def goto_contact_page(self):
+        time.sleep(7)
         self.find_element(self._menu_contacts_locator).click()
-        return ContactPage(self.dirver)
+        return ContactPage(self.driver)
 
 
 if __name__ == '__main__':
@@ -27,3 +30,5 @@ if __name__ == '__main__':
     # 访问扫码登录页面
     driver.get("https://work.weixin.qq.com/wework_admin/loginpage_wx?")
     MainPage(driver).goto_contact_page()
+
+    # member_list > tr:nth-child(1) > td:nth-child(2) > span:nth-child(1)

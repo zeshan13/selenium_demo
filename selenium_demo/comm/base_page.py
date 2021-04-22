@@ -6,6 +6,8 @@
 import yaml
 
 from selenium import webdriver
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class BasePage:
 
@@ -23,19 +25,25 @@ class BasePage:
         self.driver.maximize_window()
 
     def find_element(self,by,ele=None):
-
         if ele == None:
-            self.driver.find_element(*by)
+            WebDriverWait(self.driver, 30).until(EC.presence_of_element_located(by))
+            ele_obj = self.driver.find_element(*by)
         else:
-            self.driver.find_element(by,ele)
+            WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((by,ele)))
+            ele_obj = self.driver.find_element(by,ele)
+
+        return ele_obj
 
     def find_elements(self, by, ele=None):
         if ele == None:
-            self.driver.find_elements(*by)
+            WebDriverWait(self.driver, 30).until(EC.presence_of_element_located(by))
+            ele_obj = self.driver.find_elements(*by)
         else:
-            self.driver.find_elements(by, ele)
+            WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((by, ele)))
+            ele_obj = self.driver.find_elements(by, ele)
+        return ele_obj
 
-
-
+    def execute_script(self,js):
+        self.driver.execute_script(js)
 
 

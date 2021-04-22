@@ -5,7 +5,7 @@
 # @File    : add_member_page.py
 
 from selenium_demo.comm.base_page import BasePage
-from contact_page import ContactPage
+# from selenium_demo.page_obj.contact_page import ContactPage
 from selenium.webdriver.common.by import By
 
 class AddMemberPage(BasePage):
@@ -13,8 +13,17 @@ class AddMemberPage(BasePage):
     _accid = (By.CSS_SELECTOR, "[id='memberAdd_acctid']")
     _email  = (By.CSS_SELECTOR, "[id='memberAdd_mail']")
     _save_btn = (By.CSS_SELECTOR, "a.qui_btn.ww_btn.js_btn_save")
+    _save_and_continue_btn = (By.CSS_SELECTOR, "a.qui_btn.ww_btn.ww_btn_Blue.js_btn_continue")
 
-    def add_member(self,username, accid, email):
+    def add_member(self, username, accid, email):
+        """
+        :param username:
+        :param accid:
+        :param email:
+        :return:
+        """
+        # 方法内导包，避免循环导包
+        from selenium_demo.page_obj.contact_page import ContactPage
         # 输入员工名称
         self.find_element(self._username).send_keys(username)
         # 输入工号
@@ -23,6 +32,49 @@ class AddMemberPage(BasePage):
         self.find_element(self._email).send_keys(email)
         # 点击保存按钮
         self.find_element(self._save_btn).click()
+        return ContactPage(self.driver)
+
+    def add_member_failed(self, username, accid, email):
+        """
+        :param username:
+        :param accid:
+        :param email:
+        :return:
+        """
+        # 方法内导包，避免循环导包
+        from selenium_demo.page_obj.contact_page import ContactPage
+        # 输入员工名称
+        self.find_element(self._username).send_keys(username)
+        # 输入工号
+        self.find_element(self._accid).send_keys(accid)
+        # 输入邮箱
+        self.find_element(self._email).send_keys(email)
+        # 点击保存按钮
+        self.find_element(self._save_btn).click()
+        return ContactPage(self.driver)
+
+    def add_member_continue(self, username, accid, email,loop):
+        """
+        :param username:
+        :param accid:
+        :param email:
+        :param loop:循环添加次数
+        :return:
+        """
+        # 方法内导包，避免循环导包
+        from selenium_demo.page_obj.contact_page import ContactPage
+
+        while loop > 0:
+            # 输入员工名称
+            self.find_element(self._username).send_keys(username)
+            # 输入工号
+            self.find_element(self._accid).send_keys(accid)
+            # 输入邮箱
+            self.find_element(self._email).send_keys(email)
+            # 点击保存按钮
+            self.find_element(self._save_and_continue_btn).click()
+        self.find_element(self._save_btn).click()
+
         return ContactPage(self.driver)
 
 
