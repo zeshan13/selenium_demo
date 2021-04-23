@@ -30,5 +30,3 @@ if __name__ == '__main__':
     # 访问扫码登录页面
     driver.get("https://work.weixin.qq.com/wework_admin/loginpage_wx?")
     MainPage(driver).goto_contact_page()
-
-    # member_list > tr:nth-child(1) > td:nth-child(2) > span:nth-child(1)
