@@ -4,8 +4,9 @@
 # @Author  : zeshan
 # @File    : logger.py
 import logging
+import os
 import time
-import config
+from selenium_demo.comm import config
 cfg = config.COMMCFG
 
 class Logger(object):
@@ -15,8 +16,8 @@ class Logger(object):
         self.logger.setLevel(logging.DEBUG)
 
         rq = time.strftime('%Y%m%d%H%M%S',time.localtime(time.time()))
-        log_name = cfg.logs_dir + rq + '.log'
-        fh = logging.FileHandler(log_name)
+        log_name = os.path.join(cfg.logs_dir ,rq + '.log')
+        fh = logging.FileHandler(log_name,encoding="utf-8")
         fh.setLevel(logging.INFO)
 
         ch = logging.StreamHandler()
