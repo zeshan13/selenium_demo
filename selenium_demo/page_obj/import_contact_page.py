@@ -4,7 +4,6 @@
 # @Author  : zeshan
 # @File    : import_contact_page.py
 import time
-
 from selenium_demo.comm.base_page import BasePage
 from selenium_demo.page_obj.contact_page import ContactPage
 from selenium.webdriver.common.by import By

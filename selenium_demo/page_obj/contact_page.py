@@ -4,10 +4,11 @@
 # @Author  : zeshan
 # @File    : contact_page.py
 import time
-
 from selenium_demo.comm.base_page import BasePage
 from selenium_demo.page_obj.add_member_page import AddMemberPage
 from selenium.webdriver.common.by import By
+from selenium_demo.comm.logger import Logger
+logger = Logger("contact.py").getLog()
 
 class ContactPage(BasePage):
     _username = (By.CSS_SELECTOR, "[id='username']")
@@ -20,15 +21,25 @@ class ContactPage(BasePage):
     _import_by_file_btn = (By.CSS_SELECTOR,"#js_contacts48 > div > div.member_colRight > div > div.js_party_info > div.js_has_member > div.js_operationBar_footer.ww_operationBar > div.ww_btnWithMenu.ww_btnWithMenu_Open_Up.js_btnWithMenu.js_import_other_wrap.ww_btnWithMenu_Open > div > ul > li:nth-child(1) > a")
 
     def get_contact_list(self):
+        time.sleep(3)
         contact_list = []
-        contact_name_list = [i.text for i in self.find_elements(self._contact_name_list)]
+        try:
+            contact_name_list = [i.text for i in self.find_elements(self._contact_name_list)]
+            contact_list = contact_name_list + contact_list
+            logger.info("contact_name_list is :%s" % contact_name_list)
+        except Exception as e:
+            logger.error("Failed to get contact list by import:%s" % e)
+        else:
+            contact_list = contact_name_list
+
         try:
             contact_name_list_by_import = [i.text for i in self.find_elements(self._contact_name_list_by_import)]
+            logger.info("contact_name_list_by_import is :%s" % contact_name_list_by_import)
         except Exception as e:
-            print("Failed to get contact list by import:%s" % e)
+            logger.error("Failed to get contact list by import:%s" % e)
         else:
-            contact_list.append(contact_name_list_by_import)
-        contact_list.append(contact_name_list)
+            contact_list = contact_name_list_by_import + contact_list
+            logger.info("contact_list is :%s" % contact_list)
         return contact_list
 
 
