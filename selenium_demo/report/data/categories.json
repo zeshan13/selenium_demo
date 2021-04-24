@@ -1,0 +1,52 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home",
+      "children" : [ {
+        "name" : "test_remote",
+        "uid" : "fc0d45b1693fb29c",
+        "parentUid" : "33c46502003fcc7a313bd9e3b933dea5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1619259430771,
+          "stop" : 1619259430771,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_add_member_by_mainpage",
+        "uid" : "9ea121df7dc916d4",
+        "parentUid" : "33c46502003fcc7a313bd9e3b933dea5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1619259430981,
+          "stop" : 1619259430981,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_add_member_by_contpage",
+        "uid" : "a0489d8b133d5b9d",
+        "parentUid" : "33c46502003fcc7a313bd9e3b933dea5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1619259431051,
+          "stop" : 1619259431051,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "33c46502003fcc7a313bd9e3b933dea5"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

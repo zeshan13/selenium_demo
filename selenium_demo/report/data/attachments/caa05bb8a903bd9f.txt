@@ -1,0 +1,8 @@
+2021-04-24 18:17:27,614 - base_page.py - INFO - find_element (('css selector', "[id='menu_contacts']"),None)
+2021-04-24 18:17:30,902 - base_page.py - INFO - find_element (('css selector', '.member_colLeft_top_addBtn'),None)
+2021-04-24 18:17:31,046 - base_page.py - INFO - find_element (('css selector', '.js_create_party'),None)
+2021-04-24 18:17:31,267 - base_page.py - INFO - find_element (('css selector', ".qui_inputText.ww_inputText[name='name']"),None)
+2021-04-24 18:17:31,346 - base_page.py - INFO - find_element (('css selector', '.js_parent_party_name'),None)
+2021-04-24 18:17:31,445 - base_page.py - INFO - find_element (('css selector', 'div.qui_dropdownMenu.ww_dropdownMenu.member_colLeft.js_party_list_container >div > ul >li > a.jstree-anchor'),None)
+2021-04-24 18:17:31,552 - base_page.py - INFO - find_element (('css selector', 'div > a:first-child[d_ck]'),None)
+2021-04-24 18:17:36,656 - base_page.py - INFO - find_elements (('css selector', 'div.member_colLeft_bottom > div > ul  >li >ul >li >a'),None)

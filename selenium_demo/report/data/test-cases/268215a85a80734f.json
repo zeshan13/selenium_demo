@@ -1,0 +1,147 @@
+{
+  "uid" : "268215a85a80734f",
+  "name" : "test_add_member_in_main_page[小黑6-065-98765432126@qq.com]",
+  "fullName" : "test_suites.test_add_member.TestAddMember#test_add_member_in_main_page",
+  "historyId" : "31789bb5a0f2e10a47f7408afe6ba24a",
+  "time" : {
+    "start" : 1619259529216,
+    "stop" : 1619259570049,
+    "duration" : 40833
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1619259517955,
+      "stop" : 1619259525397,
+      "duration" : 7442
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cookies",
+    "time" : {
+      "start" : 1619259525398,
+      "stop" : 1619259525429,
+      "duration" : 31
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "main_page",
+    "time" : {
+      "start" : 1619259525429,
+      "stop" : 1619259529215,
+      "duration" : 3786
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e381bec009a40d6f",
+      "name" : "log",
+      "source" : "e381bec009a40d6f.txt",
+      "type" : "text/plain",
+      "size" : 1000
+    }, {
+      "uid" : "e49b1d9290315ab5",
+      "name" : "stderr",
+      "source" : "e49b1d9290315ab5.txt",
+      "type" : "text/plain",
+      "size" : 1087
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1619259570059,
+      "stop" : 1619259572379,
+      "duration" : 2320
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_suites"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_member"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAddMember"
+  }, {
+    "name" : "host",
+    "value" : "周耳朵"
+  }, {
+    "name" : "thread",
+    "value" : "12776-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_suites.test_add_member"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "accid",
+    "value" : "'065'"
+  }, {
+    "name" : "email",
+    "value" : "'98765432126@qq.com'"
+  }, {
+    "name" : "username",
+    "value" : "'小黑6'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "268215a85a80734f.json",
+  "parameterValues" : [ "'065'", "'98765432126@qq.com'", "'小黑6'" ]
+}

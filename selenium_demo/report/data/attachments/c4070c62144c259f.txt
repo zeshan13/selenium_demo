@@ -1,0 +1,8 @@
+INFO     base_page.py:base_page.py:39 find_element (('css selector', "[id='menu_contacts']"),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', '.member_colLeft_top_addBtn'),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', '.js_create_party'),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', ".qui_inputText.ww_inputText[name='name']"),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', '.js_parent_party_name'),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', 'div.qui_dropdownMenu.ww_dropdownMenu.member_colLeft.js_party_list_container >div > ul >li > a.jstree-anchor'),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', 'div > a:first-child[d_ck]'),None)
+INFO     base_page.py:base_page.py:53 find_elements (('css selector', 'div.member_colLeft_bottom > div > ul  >li >ul >li >a'),None)

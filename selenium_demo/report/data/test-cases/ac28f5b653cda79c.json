@@ -1,0 +1,97 @@
+{
+  "uid" : "ac28f5b653cda79c",
+  "name" : "test_login",
+  "fullName" : "test_suites.test_add_department.TestAddDepartment#test_login",
+  "historyId" : "09921cc0fa220b736ef4033668e7d873",
+  "time" : {
+    "start" : 1619259414558,
+    "stop" : 1619259414558,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: unconditional skip",
+  "statusTrace" : "('D:\\\\PycharmProjects\\\\uhogwarts\\\\selenium_demo\\\\test_suites\\\\test_add_department.py', 15, 'Skipped: unconditional skip')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1619259414578,
+      "stop" : 1619259421856,
+      "duration" : 7278
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1619259426904,
+      "stop" : 1619259430761,
+      "duration" : 3857
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=0)"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.skip"
+  }, {
+    "name" : "tag",
+    "value" : "first"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_suites"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_department"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAddDepartment"
+  }, {
+    "name" : "host",
+    "value" : "周耳朵"
+  }, {
+    "name" : "thread",
+    "value" : "12776-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_suites.test_add_department"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.skip", "run(order=0)", "first" ]
+  },
+  "source" : "ac28f5b653cda79c.json",
+  "parameterValues" : [ ]
+}

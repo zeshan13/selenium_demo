@@ -1,0 +1,9 @@
+2021-04-24 18:20:11,029 - base_page.py - INFO - find_element (('css selector', '.ww_indexImg.ww_indexImg_Import'),None)
+2021-04-24 18:20:14,065 - base_page.py - INFO - find_element (('css selector', 'input.qui_btn.ww_btn.ww_fileInputWrap'),None)
+2021-04-24 18:20:14,136 - base_page.py - INFO - find_element (('css selector', '#submit_csv'),None)
+2021-04-24 18:20:16,327 - base_page.py - INFO - find_element (('css selector', '#reloadContact'),None)
+2021-04-24 18:20:19,979 - base_page.py - INFO - find_elements (('css selector', '#member_list > tr> td:nth-child(2) > span:nth-child(1)'),None)
+2021-04-24 18:20:20,043 - contact.py - INFO - contact_name_list is :['黄泽珊', '小黄6', '小黑6']
+2021-04-24 18:20:20,075 - base_page.py - INFO - find_elements (('css selector', '.js_unsortable.js_list.ui-sortable>tr>td:nth-child(2)'),None)
+2021-04-24 18:20:20,110 - contact.py - INFO - contact_name_list_by_import is :['张三（示例）', '李四（示例）']
+2021-04-24 18:20:20,110 - contact.py - INFO - contact_list is :['张三（示例）', '李四（示例）', '黄泽珊', '小黄6', '小黑6']

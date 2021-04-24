@@ -1,0 +1,230 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "demo1",
+    "children" : [ {
+      "name" : "test_wechat",
+      "children" : [ {
+        "name" : "TestWeChat",
+        "children" : [ {
+          "name" : "test_login",
+          "uid" : "c0b7510a1d4d3bd8",
+          "parentUid" : "c8b77ecfafd9d738319757c66685f85c",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1619259414558,
+            "stop" : 1619259414558,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_add_member_by_mainpage",
+          "uid" : "9ea121df7dc916d4",
+          "parentUid" : "c8b77ecfafd9d738319757c66685f85c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1619259430981,
+            "stop" : 1619259430981,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_add_member_by_contpage",
+          "uid" : "a0489d8b133d5b9d",
+          "parentUid" : "c8b77ecfafd9d738319757c66685f85c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1619259431051,
+            "stop" : 1619259431051,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "c8b77ecfafd9d738319757c66685f85c"
+      } ],
+      "uid" : "4f83fbad4f76469cea6fd5eb1f1d4368"
+    }, {
+      "name" : "test_chrome_debug",
+      "children" : [ {
+        "name" : "TestChromeDebug",
+        "children" : [ {
+          "name" : "test_remote",
+          "uid" : "fc0d45b1693fb29c",
+          "parentUid" : "e6528cf8be639bf2c34a9036b13df61f",
+          "status" : "broken",
+          "time" : {
+            "start" : 1619259430771,
+            "stop" : 1619259430771,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e6528cf8be639bf2c34a9036b13df61f"
+      } ],
+      "uid" : "1bd0f5284e1de9f2d6ee53259893a464"
+    } ],
+    "uid" : "141fb3a1f5638da9581c275200de6fea"
+  }, {
+    "name" : "test_suites",
+    "children" : [ {
+      "name" : "test_add_department",
+      "children" : [ {
+        "name" : "TestAddDepartment",
+        "children" : [ {
+          "name" : "test_login",
+          "uid" : "ac28f5b653cda79c",
+          "parentUid" : "afc7c9ae25c9bb9d5453070eaed0ce89",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1619259414558,
+            "stop" : 1619259414558,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_add_department_in_contact_page[财务部]",
+          "uid" : "1c26a1afdb2aaf50",
+          "parentUid" : "afc7c9ae25c9bb9d5453070eaed0ce89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1619259442579,
+            "stop" : 1619259456708,
+            "duration" : 14129
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'财务部'" ]
+        } ],
+        "uid" : "afc7c9ae25c9bb9d5453070eaed0ce89"
+      } ],
+      "uid" : "9e71deca782e9c32c7ca3dd5623ec14e"
+    }, {
+      "name" : "test_imoort_contacts",
+      "children" : [ {
+        "name" : "TestImportContacts",
+        "children" : [ {
+          "name" : "test_login",
+          "uid" : "c89295b9d3c4e641",
+          "parentUid" : "792e4b05654c2948511f2d554daf848b",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1619259414568,
+            "stop" : 1619259414568,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_import_contacts_in_contact_page",
+          "uid" : "94df451c9f2515ba",
+          "parentUid" : "792e4b05654c2948511f2d554daf848b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1619259582493,
+            "stop" : 1619259596386,
+            "duration" : 13893
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_import_contacts_in_main_page",
+          "uid" : "6556a03d5abc2b3f",
+          "parentUid" : "792e4b05654c2948511f2d554daf848b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1619259611004,
+            "stop" : 1619259620111,
+            "duration" : 9107
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "792e4b05654c2948511f2d554daf848b"
+      } ],
+      "uid" : "714cada3a4ce8bec8206a3432948ed89"
+    }, {
+      "name" : "test_add_member",
+      "children" : [ {
+        "name" : "TestAddMember",
+        "children" : [ {
+          "name" : "test_login",
+          "uid" : "3617a823b748aa1b",
+          "parentUid" : "6eeb6eae7caf11b60d66a08f20f87b3a",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1619259414568,
+            "stop" : 1619259414568,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_add_member_in_contact_page[小黄6-0066-12345678965@qq.com]",
+          "uid" : "34a148df194cdae2",
+          "parentUid" : "6eeb6eae7caf11b60d66a08f20f87b3a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1619259471035,
+            "stop" : 1619259515545,
+            "duration" : 44510
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'0066'", "'12345678965@qq.com'", "'小黄6'" ]
+        }, {
+          "name" : "test_add_member_in_main_page[小黑6-065-98765432126@qq.com]",
+          "uid" : "268215a85a80734f",
+          "parentUid" : "6eeb6eae7caf11b60d66a08f20f87b3a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1619259529216,
+            "stop" : 1619259570049,
+            "duration" : 40833
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'065'", "'98765432126@qq.com'", "'小黑6'" ]
+        } ],
+        "uid" : "6eeb6eae7caf11b60d66a08f20f87b3a"
+      } ],
+      "uid" : "554685cafe79f6ab11797b8724643adf"
+    }, {
+      "name" : "test_login",
+      "children" : [ {
+        "name" : "TestLogin",
+        "children" : [ {
+          "name" : "test_login",
+          "uid" : "379302c111e2499b",
+          "parentUid" : "61f215fa7b6432805dceac112240f5af",
+          "status" : "passed",
+          "time" : {
+            "start" : 1619259421858,
+            "stop" : 1619259426901,
+            "duration" : 5043
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "61f215fa7b6432805dceac112240f5af"
+      } ],
+      "uid" : "ae3c8a5e45c0a3116b001d82295bc1ef"
+    } ],
+    "uid" : "2649440f607288c36cea2e5c6aba56c9"
+  } ]
+}

@@ -1,0 +1,138 @@
+{
+  "uid" : "94df451c9f2515ba",
+  "name" : "test_import_contacts_in_contact_page",
+  "fullName" : "test_suites.test_imoort_contacts.TestImportContacts#test_import_contacts_in_contact_page",
+  "historyId" : "883b027c6b48421b44a094eef27598aa",
+  "time" : {
+    "start" : 1619259582493,
+    "stop" : 1619259596386,
+    "duration" : 13893
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "cookies",
+    "time" : {
+      "start" : 1619259579699,
+      "stop" : 1619259579709,
+      "duration" : 10
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "main_page",
+    "time" : {
+      "start" : 1619259579709,
+      "stop" : 1619259582492,
+      "duration" : 2783
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1619259572439,
+      "stop" : 1619259579699,
+      "duration" : 7260
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f64e9272303e306e",
+      "name" : "log",
+      "source" : "f64e9272303e306e.txt",
+      "type" : "text/plain",
+      "size" : 1296
+    }, {
+      "uid" : "c27d1b5e6f2d352e",
+      "name" : "stderr",
+      "source" : "c27d1b5e6f2d352e.txt",
+      "type" : "text/plain",
+      "size" : 1398
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1619259596406,
+      "stop" : 1619259598766,
+      "duration" : 2360
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_suites"
+  }, {
+    "name" : "suite",
+    "value" : "test_imoort_contacts"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestImportContacts"
+  }, {
+    "name" : "host",
+    "value" : "周耳朵"
+  }, {
+    "name" : "thread",
+    "value" : "12776-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_suites.test_imoort_contacts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "94df451c9f2515ba.json",
+  "parameterValues" : [ ]
+}

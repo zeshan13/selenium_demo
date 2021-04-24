@@ -1,0 +1,10 @@
+2021-04-24 18:18:49,238 - base_page.py - INFO - find_element (('css selector', "[node-type='addmember']"),None)
+2021-04-24 18:18:56,225 - base_page.py - INFO - find_element (('css selector', "[id='username']"),None)
+2021-04-24 18:18:56,318 - base_page.py - INFO - find_element (('css selector', "[id='memberAdd_acctid']"),None)
+2021-04-24 18:18:56,442 - base_page.py - INFO - find_element (('css selector', "[id='memberAdd_mail']"),None)
+2021-04-24 18:18:56,615 - base_page.py - INFO - find_element (('css selector', 'a.qui_btn.ww_btn.js_btn_save'),None)
+2021-04-24 18:18:59,774 - base_page.py - INFO - find_elements (('css selector', '#member_list > tr> td:nth-child(2) > span:nth-child(1)'),None)
+2021-04-24 18:18:59,819 - contact.py - INFO - contact_name_list is :['黄泽珊', '小黄6', '小黑6']
+2021-04-24 18:19:30,048 - base_page.py - ERROR - Failed to find_elements (('css selector', '.js_unsortable.js_list.ui-sortable>tr>td:nth-child(2)'),None) :Message: 
+
+2021-04-24 18:19:30,048 - contact.py - ERROR - Failed to get contact list by import:'NoneType' object is not iterable

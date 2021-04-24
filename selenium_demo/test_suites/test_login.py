@@ -13,7 +13,7 @@ cfg = config.COMMCFG
 @pytest.mark.first
 class TestLogin():
     def test_login(self,driver):
-        time.sleep(3) #第一次登录等待扫码
+        time.sleep(5) #第一次登录等待扫码
         cookies  = driver.get_cookies()
         # 存储首次登录cookies
         DoYaml().write_yaml(file_path=cfg.cookies_path, content=cookies)

@@ -46,10 +46,10 @@ class BasePage:
         try:
             if ele == None:
                 WebDriverWait(self.driver, 30).until(EC.presence_of_element_located(by))
-                ele_obj = self.driver.find_element(*by)
+                ele_obj = self.driver.find_elements(*by)
             else:
                 WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((by, ele)))
-                ele_obj = self.driver.find_element(by, ele)
+                ele_obj = self.driver.find_elements(by, ele)
             logger.info("find_elements (%s,%s)" % (by, ele))
         except Exception as e:
             logger.error("Failed to find_elements (%s,%s) :%s" % (by, ele, e))

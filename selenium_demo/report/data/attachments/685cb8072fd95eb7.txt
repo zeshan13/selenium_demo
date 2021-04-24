@@ -1,0 +1,11 @@
+INFO     base_page.py:base_page.py:39 find_element (('css selector', "[id='menu_contacts']"),None)
+INFO     base_page.py:base_page.py:62 execute_script suecess:document.getElementsByClassName('qui_btn ww_btn js_add_member')[0].click()
+INFO     base_page.py:base_page.py:39 find_element (('css selector', "[id='username']"),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', "[id='memberAdd_acctid']"),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', "[id='memberAdd_mail']"),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', 'a.qui_btn.ww_btn.js_btn_save'),None)
+INFO     base_page.py:base_page.py:53 find_elements (('css selector', '#member_list > tr> td:nth-child(2) > span:nth-child(1)'),None)
+INFO     contact.py:contact_page.py:33 contact_name_list is :['黄泽珊', '小黄6']
+ERROR    base_page.py:base_page.py:55 Failed to find_elements (('css selector', '.js_unsortable.js_list.ui-sortable>tr>td:nth-child(2)'),None) :Message: 
+
+ERROR    contact.py:contact_page.py:43 Failed to get contact list by import:'NoneType' object is not iterable

@@ -4,7 +4,6 @@
 # @Author  : zeshan
 # @File    : test_add_member.py
 import time
-
 import pytest
 from selenium_demo.comm import config
 from selenium_demo.comm.do_yaml import DoYaml

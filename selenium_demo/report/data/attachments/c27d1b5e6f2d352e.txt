@@ -1,0 +1,11 @@
+2021-04-24 18:19:47,513 - base_page.py - INFO - find_element (('css selector', "[id='menu_contacts']"),None)
+2021-04-24 18:19:49,364 - base_page.py - INFO - find_element (('css selector', 'div.js_has_member >div >div> a >.ww_btn_PartDropdown_right'),None)
+2021-04-24 18:19:49,446 - base_page.py - INFO - find_element (('css selector', 'div.js_has_member > div > div > div>ul>li>a.qui_dropdownMenu_itemLink.ww_dropdownMenu_itemLink.js_import_member'),None)
+2021-04-24 18:19:50,597 - base_page.py - INFO - find_element (('css selector', 'input.qui_btn.ww_btn.ww_fileInputWrap'),None)
+2021-04-24 18:19:50,695 - base_page.py - INFO - find_element (('css selector', '#submit_csv'),None)
+2021-04-24 18:19:52,413 - base_page.py - INFO - find_element (('css selector', '#reloadContact'),None)
+2021-04-24 18:19:56,287 - base_page.py - INFO - find_elements (('css selector', '#member_list > tr> td:nth-child(2) > span:nth-child(1)'),None)
+2021-04-24 18:19:56,335 - contact.py - INFO - contact_name_list is :['黄泽珊', '小黄6', '小黑6']
+2021-04-24 18:19:56,365 - base_page.py - INFO - find_elements (('css selector', '.js_unsortable.js_list.ui-sortable>tr>td:nth-child(2)'),None)
+2021-04-24 18:19:56,385 - contact.py - INFO - contact_name_list_by_import is :['张三（示例）']
+2021-04-24 18:19:56,385 - contact.py - INFO - contact_list is :['张三（示例）', '黄泽珊', '小黄6', '小黑6']

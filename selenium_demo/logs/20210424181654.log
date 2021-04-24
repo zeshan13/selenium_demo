@@ -1,0 +1,49 @@
+2021-04-24 18:17:27,614 - base_page.py - INFO - find_element (('css selector', "[id='menu_contacts']"),None)
+2021-04-24 18:17:30,902 - base_page.py - INFO - find_element (('css selector', '.member_colLeft_top_addBtn'),None)
+2021-04-24 18:17:31,046 - base_page.py - INFO - find_element (('css selector', '.js_create_party'),None)
+2021-04-24 18:17:31,267 - base_page.py - INFO - find_element (('css selector', ".qui_inputText.ww_inputText[name='name']"),None)
+2021-04-24 18:17:31,346 - base_page.py - INFO - find_element (('css selector', '.js_parent_party_name'),None)
+2021-04-24 18:17:31,445 - base_page.py - INFO - find_element (('css selector', 'div.qui_dropdownMenu.ww_dropdownMenu.member_colLeft.js_party_list_container >div > ul >li > a.jstree-anchor'),None)
+2021-04-24 18:17:31,552 - base_page.py - INFO - find_element (('css selector', 'div > a:first-child[d_ck]'),None)
+2021-04-24 18:17:36,656 - base_page.py - INFO - find_elements (('css selector', 'div.member_colLeft_bottom > div > ul  >li >ul >li >a'),None)
+2021-04-24 18:17:56,069 - base_page.py - INFO - find_element (('css selector', "[id='menu_contacts']"),None)
+2021-04-24 18:18:01,235 - base_page.py - INFO - execute_script suecess:document.getElementsByClassName('qui_btn ww_btn js_add_member')[0].click()
+2021-04-24 18:18:01,810 - base_page.py - INFO - find_element (('css selector', "[id='username']"),None)
+2021-04-24 18:18:01,934 - base_page.py - INFO - find_element (('css selector', "[id='memberAdd_acctid']"),None)
+2021-04-24 18:18:02,039 - base_page.py - INFO - find_element (('css selector', "[id='memberAdd_mail']"),None)
+2021-04-24 18:18:02,193 - base_page.py - INFO - find_element (('css selector', 'a.qui_btn.ww_btn.js_btn_save'),None)
+2021-04-24 18:18:05,383 - base_page.py - INFO - find_elements (('css selector', '#member_list > tr> td:nth-child(2) > span:nth-child(1)'),None)
+2021-04-24 18:18:05,403 - contact.py - INFO - contact_name_list is :['黄泽珊', '小黄6']
+2021-04-24 18:18:35,544 - base_page.py - ERROR - Failed to find_elements (('css selector', '.js_unsortable.js_list.ui-sortable>tr>td:nth-child(2)'),None) :Message: 
+
+2021-04-24 18:18:35,544 - contact.py - ERROR - Failed to get contact list by import:'NoneType' object is not iterable
+2021-04-24 18:18:49,238 - base_page.py - INFO - find_element (('css selector', "[node-type='addmember']"),None)
+2021-04-24 18:18:56,225 - base_page.py - INFO - find_element (('css selector', "[id='username']"),None)
+2021-04-24 18:18:56,318 - base_page.py - INFO - find_element (('css selector', "[id='memberAdd_acctid']"),None)
+2021-04-24 18:18:56,442 - base_page.py - INFO - find_element (('css selector', "[id='memberAdd_mail']"),None)
+2021-04-24 18:18:56,615 - base_page.py - INFO - find_element (('css selector', 'a.qui_btn.ww_btn.js_btn_save'),None)
+2021-04-24 18:18:59,774 - base_page.py - INFO - find_elements (('css selector', '#member_list > tr> td:nth-child(2) > span:nth-child(1)'),None)
+2021-04-24 18:18:59,819 - contact.py - INFO - contact_name_list is :['黄泽珊', '小黄6', '小黑6']
+2021-04-24 18:19:30,048 - base_page.py - ERROR - Failed to find_elements (('css selector', '.js_unsortable.js_list.ui-sortable>tr>td:nth-child(2)'),None) :Message: 
+
+2021-04-24 18:19:30,048 - contact.py - ERROR - Failed to get contact list by import:'NoneType' object is not iterable
+2021-04-24 18:19:47,513 - base_page.py - INFO - find_element (('css selector', "[id='menu_contacts']"),None)
+2021-04-24 18:19:49,364 - base_page.py - INFO - find_element (('css selector', 'div.js_has_member >div >div> a >.ww_btn_PartDropdown_right'),None)
+2021-04-24 18:19:49,446 - base_page.py - INFO - find_element (('css selector', 'div.js_has_member > div > div > div>ul>li>a.qui_dropdownMenu_itemLink.ww_dropdownMenu_itemLink.js_import_member'),None)
+2021-04-24 18:19:50,597 - base_page.py - INFO - find_element (('css selector', 'input.qui_btn.ww_btn.ww_fileInputWrap'),None)
+2021-04-24 18:19:50,695 - base_page.py - INFO - find_element (('css selector', '#submit_csv'),None)
+2021-04-24 18:19:52,413 - base_page.py - INFO - find_element (('css selector', '#reloadContact'),None)
+2021-04-24 18:19:56,287 - base_page.py - INFO - find_elements (('css selector', '#member_list > tr> td:nth-child(2) > span:nth-child(1)'),None)
+2021-04-24 18:19:56,335 - contact.py - INFO - contact_name_list is :['黄泽珊', '小黄6', '小黑6']
+2021-04-24 18:19:56,365 - base_page.py - INFO - find_elements (('css selector', '.js_unsortable.js_list.ui-sortable>tr>td:nth-child(2)'),None)
+2021-04-24 18:19:56,385 - contact.py - INFO - contact_name_list_by_import is :['张三（示例）']
+2021-04-24 18:19:56,385 - contact.py - INFO - contact_list is :['张三（示例）', '黄泽珊', '小黄6', '小黑6']
+2021-04-24 18:20:11,029 - base_page.py - INFO - find_element (('css selector', '.ww_indexImg.ww_indexImg_Import'),None)
+2021-04-24 18:20:14,065 - base_page.py - INFO - find_element (('css selector', 'input.qui_btn.ww_btn.ww_fileInputWrap'),None)
+2021-04-24 18:20:14,136 - base_page.py - INFO - find_element (('css selector', '#submit_csv'),None)
+2021-04-24 18:20:16,327 - base_page.py - INFO - find_element (('css selector', '#reloadContact'),None)
+2021-04-24 18:20:19,979 - base_page.py - INFO - find_elements (('css selector', '#member_list > tr> td:nth-child(2) > span:nth-child(1)'),None)
+2021-04-24 18:20:20,043 - contact.py - INFO - contact_name_list is :['黄泽珊', '小黄6', '小黑6']
+2021-04-24 18:20:20,075 - base_page.py - INFO - find_elements (('css selector', '.js_unsortable.js_list.ui-sortable>tr>td:nth-child(2)'),None)
+2021-04-24 18:20:20,110 - contact.py - INFO - contact_name_list_by_import is :['张三（示例）', '李四（示例）']
+2021-04-24 18:20:20,110 - contact.py - INFO - contact_list is :['张三（示例）', '李四（示例）', '黄泽珊', '小黄6', '小黑6']

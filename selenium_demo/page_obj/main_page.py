@@ -12,16 +12,24 @@ from selenium.webdriver.common.by import By
 
 class MainPage(BasePage):
     _add_member_btn = (By.CSS_SELECTOR, "[node-type='addmember']")
-    _menu_contacts_locator = (By.CSS_SELECTOR, "[id='menu_contacts']")
+    _menu_contacts_tab= (By.CSS_SELECTOR, "[id='menu_contacts']")
+    _import_contacts_btn = (By.CSS_SELECTOR, ".ww_indexImg.ww_indexImg_Import")
+
     def goto_add_member(self,):
         # 点击添加员工
         self.find_element(self._add_member_btn).click()
         return AddMemberPage(self.driver)
 
     def goto_contact_page(self):
-        time.sleep(7)
-        self.find_element(self._menu_contacts_locator).click()
+        time.sleep(5)
+        self.find_element(self._menu_contacts_tab).click()
         return ContactPage(self.driver)
+
+
+    def goto_import_contacts_by_file(self):
+        from selenium_demo.page_obj.import_contact_page import ImportContactPgae
+        self.find_element(self._import_contacts_btn).click()
+        return ImportContactPgae(self.driver)
 
 
 if __name__ == '__main__':

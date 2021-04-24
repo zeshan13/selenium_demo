@@ -1,0 +1,11 @@
+INFO     base_page.py:base_page.py:39 find_element (('css selector', "[id='menu_contacts']"),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', 'div.js_has_member >div >div> a >.ww_btn_PartDropdown_right'),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', 'div.js_has_member > div > div > div>ul>li>a.qui_dropdownMenu_itemLink.ww_dropdownMenu_itemLink.js_import_member'),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', 'input.qui_btn.ww_btn.ww_fileInputWrap'),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', '#submit_csv'),None)
+INFO     base_page.py:base_page.py:39 find_element (('css selector', '#reloadContact'),None)
+INFO     base_page.py:base_page.py:53 find_elements (('css selector', '#member_list > tr> td:nth-child(2) > span:nth-child(1)'),None)
+INFO     contact.py:contact_page.py:33 contact_name_list is :['黄泽珊', '小黄6', '小黑6']
+INFO     base_page.py:base_page.py:53 find_elements (('css selector', '.js_unsortable.js_list.ui-sortable>tr>td:nth-child(2)'),None)
+INFO     contact.py:contact_page.py:41 contact_name_list_by_import is :['张三（示例）']
+INFO     contact.py:contact_page.py:46 contact_list is :['张三（示例）', '黄泽珊', '小黄6', '小黑6']
