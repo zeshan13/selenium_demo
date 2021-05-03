@@ -24,4 +24,3 @@ class TestAddDepartment():
     def test_add_department_in_contact_page(self,name,main_page):
         department_list = main_page.goto_contact_page().goto_add_department().add_department(name).get_department_list()
         assert name in department_list
-

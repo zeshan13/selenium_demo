@@ -30,4 +30,9 @@ class TestAddMember():
         assert username in contact_list
 
 
-
+    def test_add_member_continue(self,main_page):
+        members_dic_list = [{"username":"小黑122","accid":"0222","email":"1234215@qq.com"},
+                            {"username":"小黑123","accid":"0324","email":"126271@qq.com"}]
+        contact_list = main_page.goto_add_member().add_member_continue(*members_dic_list).get_contact_list()
+        assert members_dic_list[0]["username"] in contact_list
+        assert members_dic_list[1]["username"] in contact_list

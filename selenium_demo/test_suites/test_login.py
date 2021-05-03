@@ -4,12 +4,14 @@
 # @Author  : zeshan
 # @File    : test_login.py
 import time
-
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import pytest
 from selenium_demo.comm import config
 from selenium_demo.comm.do_yaml import DoYaml
 cfg = config.COMMCFG
 
+# @pytest.mark.skip()
 @pytest.mark.first
 class TestLogin():
     def test_login(self,driver):
@@ -17,5 +19,4 @@ class TestLogin():
         cookies  = driver.get_cookies()
         # 存储首次登录cookies
         DoYaml().write_yaml(file_path=cfg.cookies_path, content=cookies)
-
-
+        WebDriverWait(driver, 30).until(EC.url_to_be(cfg.main_url))
