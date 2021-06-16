@@ -11,7 +11,7 @@ from selenium_demo.comm import config
 from selenium_demo.comm.do_yaml import DoYaml
 cfg = config.COMMCFG
 
-# @pytest.mark.skip()
+@pytest.mark.skip()
 @pytest.mark.first
 class TestLogin():
     def test_login(self,driver):
