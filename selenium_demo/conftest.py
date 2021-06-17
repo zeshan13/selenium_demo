@@ -13,7 +13,7 @@ from selenium_demo.comm.do_yaml import DoYaml
 from typing import List
 from selenium_demo.page_obj.main_page import MainPage
 
-cfg = config.COMMCFG
+CFG = config.COMMCFG
 COOKIES = False
 _driver = None
 
@@ -27,9 +27,9 @@ def pytest_collection_modifyitems(
 @pytest.fixture(scope="session")
 def driver():
     global  _driver
-    _driver = webdriver.Chrome(executable_path=cfg.chromedriver_for_mac_path)
+    _driver = webdriver.Chrome(executable_path=CFG.CHROMEDRIVER_FOR_MAC_PATH)
     # _driver = webdriver.Safari()
-    _driver.get(url=cfg.login_url)
+    _driver.get(url=CFG.LOGIN_URL)
     time.sleep(3)
     yield _driver
     _driver.quit()
@@ -39,19 +39,19 @@ def driver():
 def save_cookies(driver):
     cookies = driver.get_cookies()
     # 存储首次登录cookies
-    DoYaml().write_yaml(file_path=cfg.cookies_path, content=cookies)
+    DoYaml().write_yaml(file_path=CFG.COOKIES_PATH, content=cookies)
     return cookies
 
 @pytest.fixture
 def cookies():
-    cookies = DoYaml().read_yaml(file_path=cfg.cookies_path)
+    cookies = DoYaml().read_yaml(file_path=CFG.COOKIES_PATH)
     return cookies
 
 @pytest.fixture
 def main_page(driver,cookies):
     for cookie in cookies:
         driver.add_cookie(cookie)
-    driver.get(url=cfg.main_url)
+    driver.get(url=CFG.MAIN_URL)
     _main_page = MainPage(driver)
     return _main_page
 

@@ -7,7 +7,7 @@ import time
 import pytest
 from selenium_demo.comm import config
 from selenium_demo.comm.do_yaml import DoYaml
-cfg = config.COMMCFG
+CFG = config.COMMCFG
 
 
 class TestAddMember():
@@ -17,7 +17,7 @@ class TestAddMember():
         time.sleep(3) #第一次登录等待扫码
         cookies  = driver.get_cookies()
         # 存储首次登录cookies
-        DoYaml().write_yaml(file_path=cfg.cookies_path, content=cookies)
+        DoYaml().write_yaml(file_path=CFG.COOKIES_PATH, content=cookies)
 
     @pytest.mark.parametrize("username, accid, email",[["小黄6", "0066", "12345678965@qq.com"]])
     def test_add_member_in_contact_page(self,username, accid, email,main_page):
@@ -31,7 +31,7 @@ class TestAddMember():
 
 
     def test_add_member_continue(self,main_page):
-        members_dic_list = [{"username":"小黑122","accid":"0222","email":"1234215@qq.com"},
+        members_dic_list = [{"username":"小黑","accid":"0222","email":"1234215@qq.com"},
                             {"username":"小黑123","accid":"0324","email":"126271@qq.com"}]
         contact_list = main_page.goto_add_member().add_member_continue(*members_dic_list).get_contact_list()
         assert members_dic_list[0]["username"] in contact_list

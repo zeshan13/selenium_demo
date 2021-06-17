@@ -18,5 +18,5 @@ class TestLogin():
         time.sleep(5) #第一次登录等待扫码
         cookies  = driver.get_cookies()
         # 存储首次登录cookies
-        DoYaml().write_yaml(file_path=cfg.cookies_path, content=cookies)
-        WebDriverWait(driver, 30).until(EC.url_to_be(cfg.main_url))
+        DoYaml().write_yaml(file_path=cfg.COOKIES_PATH, content=cookies)
+        WebDriverWait(driver, 30).until(EC.url_to_be(cfg.MAIN_URL))

@@ -8,6 +8,7 @@
 import yaml
 import os
 
+
 class DoYaml:
     def read_yaml(self,file_path):
         with open(file_path,encoding='utf-8') as f:
@@ -20,11 +21,12 @@ class DoYaml:
 
 
 if __name__ == '__main__':
-    import config
-    cfg = config.COMMCFG
-    yaml_file_path = cfg.cookies_path
+    from selenium_demo.selenium_demo.comm import config
+    CFG = config.COMMCFG
+    cookies_path = CFG.COOKIES_PATH
+    init_datas_path = os.path.join(CFG.TEST_DATAS_DIR,"init_datas.yaml")
 
     t = DoYaml()
-    datas = t.read_yaml(file_path=yaml_file_path)
+    datas = t.read_yaml(file_path=init_datas_path)
     print(datas)
 

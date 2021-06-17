@@ -18,7 +18,7 @@ class TestAddDepartment():
         time.sleep(3) #第一次登录等待扫码
         cookies  = driver.get_cookies()
         # 存储首次登录cookies
-        DoYaml().write_yaml(file_path=cfg.cookies_path, content=cookies)
+        DoYaml().write_yaml(file_path=cfg.COOKIES_PATH, content=cookies)
 
     @pytest.mark.parametrize("name",["财务部",])
     def test_add_department_in_contact_page(self,name,main_page):
