@@ -28,7 +28,7 @@ COMMCFG.RESULT_DIR = os.path.join(COMMCFG.BASE_DIR, "result")
 COMMCFG.SCREENSHOTS_DIR = os.path.join(COMMCFG.BASE_DIR, "screenshots")
 COMMCFG.TEST_DATAS_DIR = os.path.join(COMMCFG.BASE_DIR, "test_datas")
 COMMCFG.COOKIES_PATH = os.path.join(COMMCFG.COMM_DIR, "cookies.yaml")
-COMMCFG.INIT_DATAS_PATH = os.path.join(COMMCFG.TEST_DATAS_DIR, "init_datas.yaml")
+COMMCFG.INIT_DATAS_PATH = os.path.join(COMMCFG.TEST_DATAS_DIR, "init_datas_count.yaml")
 COMMCFG.CHROMEDRIVER_PATH = os.path.join(COMMCFG.TOOLS_DIR, "chromedriver.exe")
 COMMCFG.CHROMEDRIVER_FOR_MAC_PATH = os.path.join(COMMCFG.TOOLS_DIR, "chromedriver")
 

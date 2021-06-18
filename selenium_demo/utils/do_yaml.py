@@ -24,7 +24,7 @@ if __name__ == '__main__':
     from selenium_demo.selenium_demo.comm import config
     CFG = config.COMMCFG
     cookies_path = CFG.COOKIES_PATH
-    init_datas_path = os.path.join(CFG.TEST_DATAS_DIR,"init_datas.yaml")
+    init_datas_path = os.path.join(CFG.TEST_DATAS_DIR,"init_datas_count.yaml")
 
     t = DoYaml()
     datas = t.read_yaml(file_path=init_datas_path)
