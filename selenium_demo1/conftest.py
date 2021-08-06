@@ -17,12 +17,14 @@ LOGIN_URL = "https://work.weixin.qq.com/wework_admin/loginpage_wx?from=myhome"
 URL = "https://work.weixin.qq.com/wework_admin/frame"
 COOKIES_YAML = "./cookies.yaml"
 
+
 def pytest_collection_modifyitems(
-    session: "Session", config: "Config", items: List["Item"]
+        session: "Session", config: "Config", items: List["Item"]
 ) -> None:
     for item in items:
         item.name = item.name.encode('utf-8').decode('unicode-escape')
         item._nodeid = item.nodeid.encode('utf-8').decode('unicode-escape')
+
 
 @pytest.fixture(scope='session')
 def driver():
