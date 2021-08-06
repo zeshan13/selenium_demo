@@ -5,7 +5,9 @@
 # @File    : config.py
 import os
 
+
 class ConstError(Exception): pass
+
 
 class _const(object):
     def __setattr__(self, k, v):
@@ -31,8 +33,6 @@ COMMCFG.COOKIES_PATH = os.path.join(COMMCFG.COMM_DIR, "cookies.yaml")
 COMMCFG.INIT_DATAS_PATH = os.path.join(COMMCFG.TEST_DATAS_DIR, "init_datas_count.yaml")
 COMMCFG.CHROMEDRIVER_PATH = os.path.join(COMMCFG.TOOLS_DIR, "chromedriver.exe")
 COMMCFG.CHROMEDRIVER_FOR_MAC_PATH = os.path.join(COMMCFG.TOOLS_DIR, "chromedriver")
-
-
 
 if __name__ == '__main__':
     print(COMMCFG.BASE_DIR)

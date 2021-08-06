@@ -7,23 +7,14 @@ import time
 from selenium_demo.comm.base_page import BasePage
 from selenium_demo.page_obj.add_member_page import AddMemberPage
 from selenium_demo.page_obj.add_department import AddDepartment
-from selenium.webdriver.common.by import By
 from selenium_demo.comm.logger import Logger
+
+from selenium_demo.page_ele.contact_page import ContactPageEle
+
 logger = Logger("contact.py").getLog()
 
-class ContactPage(BasePage):
-    _username = (By.CSS_SELECTOR, "[id='username']")
-    _accid = (By.CSS_SELECTOR, "[id='memberAdd_acctid']")
-    _email  = (By.CSS_SELECTOR, "[id='memberAdd_mail']")
-    _save_btn = (By.CSS_SELECTOR, "a.qui_btn.ww_btn.js_btn_save")
-    _contact_name_list = (By.CSS_SELECTOR,"#member_list > tr> td:nth-child(2) > span:nth-child(1)")
-    _contact_name_list_by_import = (By.CSS_SELECTOR,".js_unsortable.js_list.ui-sortable>tr>td:nth-child(2)")
-    _batch_import_or_export_btn = (By.CSS_SELECTOR,"div.js_has_member >div >div> a >.ww_btn_PartDropdown_right")
-    _import_by_file_btn = (By.CSS_SELECTOR,"div.js_has_member > div > div > div>ul>li>a.qui_dropdownMenu_itemLink.ww_dropdownMenu_itemLink.js_import_member")
-    _add = (By.CSS_SELECTOR, ".member_colLeft_top_addBtn")
-    _add_department = (By.CSS_SELECTOR, ".js_create_party")
-    _department_list = (By.CSS_SELECTOR, "div.member_colLeft_bottom > div > ul  >li >ul >li >a")
 
+class ContactPage(BasePage, ContactPageEle):
     def get_contact_list(self):
         time.sleep(3)
         contact_list = []
@@ -46,7 +37,6 @@ class ContactPage(BasePage):
             logger.info("contact_list is :%s" % contact_list)
         return contact_list
 
-
     def goto_add_member(self):
         # 调用js点击"添加员工"按钮
         time.sleep(5)
@@ -59,12 +49,10 @@ class ContactPage(BasePage):
         self.find_element(self._import_by_file_btn).click()
         return ImportContactPgae(self.driver)
 
-
     def goto_add_department(self):
         self.find_element(self._add).click()
         self.find_element(self._add_department).click()
         return AddDepartment(self.driver)
-
 
     def get_department_list(self):
         time.sleep(5)

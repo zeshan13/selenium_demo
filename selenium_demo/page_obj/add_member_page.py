@@ -7,16 +7,11 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium_demo.comm.base_page import BasePage
 # from selenium_demo.page_obj.contact_page import ContactPage
-from selenium.webdriver.common.by import By
 
-class AddMemberPage(BasePage):
-    _username = (By.CSS_SELECTOR, "[id='username']")
-    _accid = (By.CSS_SELECTOR, "[id='memberAdd_acctid']")
-    _email  = (By.CSS_SELECTOR, "[id='memberAdd_mail']")
-    _save_btn = (By.CSS_SELECTOR, "a.qui_btn.ww_btn.js_btn_save")
-    _save_and_continue_btn = (By.CSS_SELECTOR, "a.qui_btn.ww_btn.ww_btn_Blue.js_btn_continue")
-    _save_succ_tip = (By.CSS_SELECTOR, "#js_tips")
+from selenium_demo.page_ele.add_member_page import AddMemberPageEle
 
+
+class AddMemberPage(BasePage, AddMemberPageEle):
     def add_member(self, username, accid, email):
         """
         :param username:
@@ -78,13 +73,14 @@ class AddMemberPage(BasePage):
             self.find_element(self._save_and_continue_btn).click()
             # 等待保存成功tips出现，再继续条添加
             WebDriverWait(self.driver, 30).until(EC.presence_of_element_located(self._save_succ_tip))
-        #点击【保存】按钮
+        # 点击【保存】按钮
         self.find_element(self._save_btn).click()
         return ContactPage(self.driver)
 
 
 if __name__ == '__main__':
     from selenium import webdriver
+
     driver = webdriver.Chrome()
     # 访问扫码登录页面
     driver.get("https://work.weixin.qq.com/wework_admin/loginpage_wx?")

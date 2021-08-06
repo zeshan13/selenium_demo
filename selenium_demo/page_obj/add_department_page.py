@@ -2,18 +2,14 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021-04-23 20:49
 # @Author  : zeshan
-# @File    : add_department.py
+# @File    : add_department_page.py
 from selenium_demo.comm.base_page import BasePage
-from selenium.webdriver.common.by import By
+from selenium_demo.page_ele.add_department_page import AddDepartmentEle
 
-class AddDepartment(BasePage):
-    _department_name = (By.CSS_SELECTOR, ".qui_inputText.ww_inputText[name='name']")
-    _select_department = (By.CSS_SELECTOR, ".js_parent_party_name")
-    _root_departments = (By.CSS_SELECTOR, "div.qui_dropdownMenu.ww_dropdownMenu.member_colLeft.js_party_list_container >div > ul >li > a.jstree-anchor")
-    _sure_btn = (By.CSS_SELECTOR, "div > a:first-child[d_ck]")
-    _cancle_btn = (By.CSS_SELECTOR, "div > a:last-child[d_ck]")
 
-    def add_department(self,name,department=None):
+class AddDepartment(BasePage, AddDepartmentEle):
+
+    def add_department(self, name, department=None):
         # 方法内导包，避免循环导包
         from selenium_demo.page_obj.contact_page import ContactPage
         # 输入心中部门名称
@@ -28,4 +24,3 @@ class AddDepartment(BasePage):
         # 点击确定按钮
         self.find_element(self._sure_btn).click()
         return ContactPage(self.driver)
-

@@ -19,8 +19,6 @@ https://plantuml.ceshiren.com/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000
 @enduml
 ```
 
-
-
 ### PageOject
 
 ![1620012825631](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1620012825631.png)
@@ -31,18 +29,16 @@ https://martinfowler.com/bliki/PageObject.html
 
 六大原则：
 
- ![image](https://ceshiren.com/uploads/default/original/2X/e/ef29c9aed7911696a26b245017b4716811cd0319.jpeg) 
-
-
+![image](https://ceshiren.com/uploads/default/original/2X/e/ef29c9aed7911696a26b245017b4716811cd0319.jpeg)
 
 ### 原则解读
 
-- 方法意义 
-  - 用公共方法代表UI所提供的功能
-  - 方法应该返回其他的PageObject或者返回用于断言的数据
-  - 同样的行为不同的结果可以建模为不同的方法
-  - 不要在方法内加断言
-- 字段意义 
-  - 不要暴露页面内部的元素给外部
-  - 不需要建模UI内的所有元素
+- 方法意义
+    - 用公共方法代表UI所提供的功能
+    - 方法应该返回其他的PageObject或者返回用于断言的数据
+    - 同样的行为不同的结果可以建模为不同的方法
+    - 不要在方法内加断言
+- 字段意义
+    - 不要暴露页面内部的元素给外部
+    - 不需要建模UI内的所有元素
 

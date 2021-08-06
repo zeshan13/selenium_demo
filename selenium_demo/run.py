@@ -5,9 +5,10 @@
 # @File    : run.py
 import os
 from comm import config
-cfg = config.COMMCFG
+
+CFG = config.COMMCFG
 if __name__ == '__main__':
-    result = cfg.result_dir
-    report = cfg.report_dir
+    result = CFG.RESULT_DIR
+    report = CFG.REPORT_DIR
     os.system("python -m pytest")
-    os.system("allure generate --clean "+result+"  --report-dir "+report)
+    os.system("allure generate --clean " + result + "  --report-dir " + report)
